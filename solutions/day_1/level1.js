@@ -14,7 +14,7 @@ console.log("First element: ",array_mt_5[0])
 console.log("Last Element:", array_mt_5[array_mt_5.length-1])
 console.log("Middle element:", array_mt_5[~~((array_mt_5.length-1)/2)])
 
-//5. Declare an array called mixedDataTypes, put different data types in the array and find the length of the array. The array size should be greater than 5
+// 5. Declare an array called mixedDataTypes, put different data types in the array and find the length of the array. The array size should be greater than 5
 const mixedDataTypes = Array(
     'Asabeneh',
     250,
@@ -60,7 +60,50 @@ function isCompanyPresent(company){
         return "Company not found"
     }
 }
-
 console.log(isCompanyPresent("Google"))
 console.log(isCompanyPresent("Cognizant"))
 
+// 14.Filter out companies which have more than one 'o' without the filter method
+result = []
+for(i=0;i<itCompanies.length;i++){
+    company = itCompanies[i]
+    count = 0
+    for(j=0;j<company.length;j++){
+        if (company[j] === 'o'){
+            count += 1
+        }
+    }
+    if (count > 1)
+        result.push(company)
+}
+console.log(result)
+
+// 15. Sort the array using sort() method
+console.log(itCompanies.sort())
+
+// 16. Reverse the array using reverse() method
+console.log(itCompanies.reverse())
+
+// 17. Slice out the first 3 companies from the array
+console.log(itCompanies.slice(0,3))
+
+// 18. Slice out the last 3 companies from the array
+console.log(itCompanies.slice(-3))
+
+// 19. Slice out the middle IT company or companies from the array
+console.log(itCompanies.slice(-5,-2))
+
+// 20. Remove the first IT company from the array
+console.log(itCompanies.shift())
+
+// 21. Remove the middle IT company from the array
+middleIndex = ~~(itCompanies.length / 2)
+itCompanies.splice(middleIndex,1)
+console.log(itCompanies)
+
+// 22. Remove the last IT company from the array
+console.log(itCompanies.pop(0))
+
+// 23. Remove all IT companies
+itCompanies.length = 0
+console.log(itCompanies)
