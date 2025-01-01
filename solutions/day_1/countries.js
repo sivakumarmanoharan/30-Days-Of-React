@@ -10,6 +10,7 @@ countries = [
     'Ireland',
     'Japan',
     'Kenya',
+    'Ethiopia'
   ]
 
 module.exports = countries

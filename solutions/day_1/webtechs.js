@@ -6,6 +6,7 @@ webTechs = [
     'Redux',
     'Node',
     'MongoDB',
+    'Sass'
   ]
 
 module.exports = webTechs
